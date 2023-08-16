@@ -1,0 +1,231 @@
+@media(max-width:700px) {
+    .mini-circle {
+        display: none;
+    }
+
+    body {
+        cursor: default;
+        overflow-x: hidden;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 27px 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        z-index: 20;
+        background-color: black;
+        font-size: 20px;
+    }
+
+    .nav a {
+
+        font-size: 25px;
+    }
+
+    .s {
+        display: none;
+        overflow: visible;
+    }
+
+    .s2 {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        cursor: pointer;
+        top: 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        width: fit-content;
+        position: relative;
+        top: 7rem;
+        padding-left: 8vw;
+        font-size: 12vw;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        opacity: 0.6;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    .hero .image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        background: none;
+        height: 50vh;
+    }
+
+    .hero .image img {
+        display: block;
+        position: relative;
+        top: 15vw;
+        width: 85vw;
+        height: 20vh;
+    }
+
+    .second {
+
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: start;
+        align-items: start;
+        height: 70vh;
+        flex-direction: column;
+        padding: 3vw 5vw;
+    }
+
+    .overview p {
+        padding-top: 1rem;
+        line-height: 1.5;
+        width: 100%;
+        font-size: 3.5vw;
+    }
+
+    .title {
+        top: -10vw;
+        position: relative;
+        padding-left: 0vw;
+    }
+
+    .problem h1 {
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13vw;
+        width: fit-content;
+        padding-left: 4vw;
+        top: -20vw;
+        position: relative;
+    }
+
+    .challenge {
+        position: relative;
+        top: -15vw;
+        width: 100vw;
+        height: 60vh;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3vw 5vw;
+    }
+
+    .challenge p {
+        line-height: 1.5;
+        width: 100%;
+        font-size: 20xp;
+    }
+
+    .col-2 .row-1 {
+        padding-bottom: 15vw;
+    }
+
+    .gallery {
+        display: none;
+    }
+
+    .tech-title h1 {
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.6;
+        font-size: 11vw;
+        width: fit-content;
+        padding-left: 5vw;
+        margin-top: 4vw;
+        margin-bottom: -4vw;
+    }
+
+    .solution {
+        width: 100%;
+        height: 110vh;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 3vw 5vw;
+    }
+
+    .solution p {
+        line-height: 1.5;
+        width: 100%;
+        font-size: 4.5vw;
+    }
+
+    .sol-col-2 .sol-row-1 {
+        padding-bottom: 15vw;
+    }
+
+    .solution-title h1 {
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13vw;
+        width: fit-content;
+        padding-left: 5vw;
+        margin-top: 2rem;
+        margin-bottom: 10vw;
+    }
+
+    .next .next-text {
+        padding-left: 0rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .next .next-text h2 {
+        position: relative;
+        padding-left: 0rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        top: 10vw
+    }
+
+    .elem h1 {
+        margin-left: -2vw;
+        text-transform: uppercase;
+        font-size: 12vw;
+        opacity: 0.7;
+        margin-top: 21vw;
+        transition: all 0.8s ease;
+    }
+
+    .footer {
+        width: 100%;
+        color: white;
+        height: 10vh;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column-reverse;
+        padding-left: 5vw;
+    }
+
+    .footer-right {
+        padding-bottom:2vw;
+        gap: 40px;
+    }
+    .logos {
+        margin-top: 10vw;
+        padding: 60px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        margin-bottom: 5vw;
+        background: #343434;
+    }
+}

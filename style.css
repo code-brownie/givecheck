@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+.mini-circle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 21;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    user-select: none;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 20;
+    background-color: black;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.s2 {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 10px;
+    position: relative;
+    bottom: 27px;
+    cursor: pointer;
+
+}
+
+.s {
+    overflow: hidden;
+    width: fit-content;
+    height: 27px;
+}
+
+.b {
+    display: inline-block;
+    position: relative;
+    bottom: 27px;
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+
+.b::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.b:hover::after {
+    width: 100%;
+}
+
+/* nav ends */
+.main {
+    /* height: 100vh; */
+    width: 100%;
+    background-color: black;
+}
+
+/* hero section */
+.hero {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero h1 {
+    width: fit-content;
+    position: relative;
+    top: 11rem;
+    padding-left: 5vw;
+    font-size: 10vw;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-weight: 700;
+    z-index: 1;
+    padding-top: 2vw;
+}
+
+.hero .image {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    top: 14vw;
+    margin-left: 5vw;
+    background: url('./images/giveDesktop.png');
+    z-index: 5;
+    border-radius: 10px;
+
+}
+
+.hero img {
+    display: none;
+    width: 90%;
+
+}
+
+.second {
+    margin-top: 20vw;
+    width: 274vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    height: 100vh;
+    padding: 3vw 2vw;
+}
+
+.title {
+    top: -5vw;
+    position: relative;
+    padding-left: 3vw;
+}
+
+.overview h4 {
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.overview h3 {
+    display: block;
+}
+
+.overview p {
+    padding-top: 1rem;
+    line-height: 1.5;
+    width: 18%;
+    font-size: 1.2vw;
+}
+
+.overview button {
+    background: none;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 35px;
+    margin: 1rem 0%;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+.overview button:hover {
+    opacity: 0.6;
+    background-color: white;
+    color: #000;
+    transform: scale(0.9);
+}
+
+/* about project section ends here */
+
+/* statement */
+
+.problem h1 {
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 4vw;
+    width: fit-content;
+    padding-left: 2vw;
+}
+
+.challenge {
+    width: 130vw;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vw 2vw;
+}
+
+.challenge h5 {
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.challenge p {
+    line-height: 1.5;
+    width: 50%;
+    font-size: 20xp;
+}
+
+.challenge .col-1 {
+    position: relative;
+    top: -2vw;
+}
+
+.challenge .col-2 {
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.col-2 .row-1 {
+    padding-bottom: 1vw;
+}
+
+
+/* Challenge starts here */
+
+/* gallery */
+
+.gallery {
+    margin-top: 3vw;
+    height: 200vh;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.gallery .gal-1 {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background: url('./images/give1.png');
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.gallery .gal-2 {
+    position: relative;
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background: url('./images/give2.png');
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.separator {
+    margin-left: 5vw;
+    height: 20px;
+    width: 85%;
+    background-color: #222222;
+    z-index: 5000;
+}
+
+
+/* solution starts here */
+
+.solution-title h1 {
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 4vw;
+    width: fit-content;
+    padding-left: 2vw;
+    margin-top: 2rem;
+    margin-bottom: -4vw;
+}
+
+.solution {
+    width: 118vw;
+    height: 75vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vw 2vw;
+}
+
+.solution h5 {
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.solution p {
+    line-height: 1.5;
+    width: 70%;
+    font-size: 20xp;
+}
+
+.solution .sol-col-1 {
+    position: relative;
+    top: -2vw;
+    width: fit-content;
+}
+
+.solution .sol-col-2 {
+    width: fit-content;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sol-col-2 .sol-row-1 {
+    padding-bottom: 2vw;
+}
+
+/* col ends here */
+
+/* Tech -stack */
+
+.tech-title h1 {
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 4vw;
+    width: fit-content;
+    padding-left: 2vw;
+    margin-top: 4vw;
+    margin-bottom: -4vw;
+}
+
+.logos {
+    margin-top: 5vw;
+    padding: 60px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 5vw;
+}
+
+.logos::after,
+.logos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2vw;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(31, 31, 31));
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), rgb(31, 31, 31));
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos:hover .logo-slide {
+    animation-play-state: paused;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.logo-slide img {
+    margin: 0 40px;
+    height: 80px;
+}
+
+/* Next project */
+.next {
+    color: #fff;
+    background-color: black;
+    width: 100%;
+    padding: 0 4vw 0 4vw;
+}
+
+.next .next-text {
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+    padding: 3.5vw 4vw;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.elem h1 {
+    margin-left: -2vw;
+    text-transform: uppercase;
+    font-size: 8vw;
+    opacity: 0.7;
+    transition: all 0.8s ease;
+}
+
+.elem h1:hover {
+    transform: translateX(12%);
+    opacity: 20%;
+}
+
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+/* Footer  */
+
+.footer {
+    width: 100%;
+    color: white;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw 0 2vw;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-left h5 {
+    font-size: 15px;
+}
+
+.footer a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .footer-right a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.footer a:hover::after {
+    width: 100%;
+}
+
+
+.tsw {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: 25vw;
+    color: #bfbfbf;
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 5vw;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw 0;
+    /* overflow: hidden; */
+}
+
+.t {
+
+
+    /* background-size:cover ; */
+    font-style: oblique;
+    letter-spacing: 0.15vw;
+    /* background-clip: text;
+    -webkit-background-clip: text; */
+}
