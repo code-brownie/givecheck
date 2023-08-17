@@ -195,9 +195,9 @@ if (window.innerWidth >= 1200) {
       end: "bottom 10%",
     },
   });
-// }
-// // challange and sol ends here
-// if (window.innerWidth >= 1200) {
+  // }
+  // // challange and sol ends here
+  // if (window.innerWidth >= 1200) {
   const tg = gsap.timeline();
   tg.from(".gal-1", {
     x: -500,
@@ -289,38 +289,41 @@ if (window.innerWidth >= 1200) {
 if (window.innerWidth <= 1000) {
   gsap.from(".second .title", {
     opacity: 0,
-    x: -500,
-    duration:0.8,
-    scrollTrigger: {
-      scroller: ".main",
-      trigger: ".second .title",
-      start: "top 50%",
-      end: "bottom 10%",
-    },
-  });
-
-  gsap.from(".second .overview", {
-    x: 600,
+    y: 100,
     duration: 0.8,
     scrollTrigger: {
       scroller: ".main",
-      trigger: ".second .overview",
-      start: "top 30%",
+      trigger: ".second .title",
+      start: "top 40%",
       end: "bottom 10%",
       // markers:true
     },
   });
+
+  gsap.from(".second .overview", {
+    opacity: 0,
+    y: 100,
+    duration: 0.8,
+    scrollTrigger: {
+      scroller: ".main",
+      trigger: ".second .overview",
+      start: "top 38%",
+      end: "bottom 0%",
+      // markers:true
+    },
+  });
   gsap.from(".t", {
-    y: -100,
+    opacity: 0,
+    y: 100,
     opacity: 0,
     duration: 0.8,
 
     scrollTrigger: {
       scroller: ".main",
       trigger: ".t",
-      start: "top 50%",
-      end: "bottom 0%",
-      // scrub: 2,
+      start: "top 60%",
+      end: "bottom 10%",
+      // scrub: 3,
       // markers:true,
     },
   });
@@ -329,38 +332,42 @@ if (window.innerWidth <= 1000) {
 
   gsap.from(".problem h1", {
     opacity: 0,
-    y: 200,
+    y: 100,
     duration: 1,
     scrollTrigger: {
       trigger: ".problem h1",
       scroller: ".main",
-      start: "top 80%",
+      start: "top 55%",
       end: "bottom 10%",
+      // markers: true,
     },
   });
   gsap.from(".challenge .col-1", {
-    x: -500,
+    opacity: 0,
+    y: 100,
     duration: 1,
     scrollTrigger: {
       trigger: ".challenge .col-1",
       scroller: ".main",
-      start: "top 70%",
-      end: "bottom 10%",
+      start: "top 50%",
+      end: "bottom 0%",
+      // markers: true,
     },
   });
   gsap.from(".challenge .col-2", {
-    x: 800,
+    opacity: 0,
+    y: 100,
     duration: 1,
     scrollTrigger: {
       trigger: ".challenge .col-1",
       scroller: ".main",
-      start: "top 60%",
-      end: "bottom 10%",
+      start: "top 50%",
+      end: "bottom 0%",
     },
   });
   gsap.from(".solution-title h1", {
     opacity: 0,
-    y: 200,
+    y: 100,
     duration: 1,
     scrollTrigger: {
       trigger: ".solution-title h1",
@@ -370,17 +377,19 @@ if (window.innerWidth <= 1000) {
     },
   });
   gsap.from(".solution .sol-col-1", {
-    x: -1000,
+    opacity: 0,
+    y: 100,
     duration: 1,
     scrollTrigger: {
       trigger: ".solution .sol-col-1",
       scroller: ".main",
-      start: "top 60%",
+      start: "top 65%",
       end: "bottom 10%",
     },
   });
   gsap.from(".solution .sol-col-2", {
-    x: 1000,
+    opacity: 0,
+    y: 100,
     duration: 1,
     scrollTrigger: {
       trigger: ".solution .sol-col-1",
