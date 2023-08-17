@@ -96,7 +96,7 @@ arrow.addEventListener("click", function () {
 // nav end here
 // img scrollTrigger
 
-if (window.innerWidth >= 1000) {
+if (window.innerWidth >= 1200) {
   gsap.to(".image", {
     y: -100,
     backgroundPositionY: "50%",
@@ -195,9 +195,9 @@ if (window.innerWidth >= 1000) {
       end: "bottom 10%",
     },
   });
-}
-// challange and sol ends here
-if (window.innerWidth >= 1000) {
+// }
+// // challange and sol ends here
+// if (window.innerWidth >= 1200) {
   const tg = gsap.timeline();
   tg.from(".gal-1", {
     x: -500,
@@ -273,7 +273,7 @@ if (window.innerWidth >= 1000) {
   document.querySelector(".footer-left .date").innerHTML = `${timeFormat}  IST`;
 
   gsap.from(".t", {
-    y: -100,
+    y: -200,
     opacity: 0,
     duration: 0.8,
 
@@ -281,7 +281,7 @@ if (window.innerWidth >= 1000) {
       scroller: ".main",
       trigger: ".t",
       start: "top 60%",
-      end: "botton 30%",
+      end: "bottom 0%",
       scrub: 2,
     },
   });
@@ -290,7 +290,7 @@ if (window.innerWidth <= 1000) {
   gsap.from(".second .title", {
     opacity: 0,
     x: -500,
-    duration: 1,
+    duration:0.8,
     scrollTrigger: {
       scroller: ".main",
       trigger: ".second .title",
@@ -301,12 +301,13 @@ if (window.innerWidth <= 1000) {
 
   gsap.from(".second .overview", {
     x: 600,
-    duration: 1,
+    duration: 0.8,
     scrollTrigger: {
       scroller: ".main",
       trigger: ".second .overview",
-      start: "top 40%",
+      start: "top 30%",
       end: "bottom 10%",
+      // markers:true
     },
   });
   gsap.from(".t", {
@@ -317,9 +318,10 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       scroller: ".main",
       trigger: ".t",
-      start: "top 30%",
-      end: "botton 30%",
+      start: "top 50%",
+      end: "bottom 0%",
       // scrub: 2,
+      // markers:true,
     },
   });
 

@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "General Sans";
+    /* background-color: rgba(127, 255, 212, 0.455); */
+    overflow-x: hidden;
+}
+.body{
+    width: 100vw;
 }
 
 .mini-circle {
@@ -80,7 +85,7 @@
 .main {
     /* height: 100vh; */
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 /* hero section */
