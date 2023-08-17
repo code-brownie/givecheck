@@ -196,40 +196,7 @@ gsap.from(".solution .sol-col-2", {
     end: "bottom 10%",
   },
 });
-if (window.innerWidth >= 768) {
-  gsap.from(".second .overview", {
-    x: 600,
-    duration: 1,
-    scrollTrigger: {
-      scroller: ".main",
-      trigger: ".second .overview",
-      start: "top 80%",
-      end: "bottom 10%",
-      markers:true,
-    },
-  });
-  gsap.from(".solution .sol-col-1", {
-    x: -1000,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".solution .sol-col-1",
-      scroller: ".main",
-      start: "top 200%",
-      end: "bottom 10%",
-      markers: true,
-    },
-  });
-  gsap.from(".solution .sol-col-2", {
-    x: 1000,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".solution .sol-col-1",
-      scroller: ".main",
-      start: "top 200%",
-      end: "bottom 10%",
-    },
-  });
-}
+
 // challange and sol ends here
 const tg = gsap.timeline();
 tg.from(".gal-1", {
@@ -304,21 +271,7 @@ const timeFormat = `${hours}:${minutes}`;
 console.log("Current time:", timeFormat);
 
 document.querySelector(".footer-left .date").innerHTML = `${timeFormat}  IST`;
-if (innerWidth >= 769) {
-  gsap.from(".t", {
-    y: -500,
-    opacity: 0,
-    duration: 1,
 
-    scrollTrigger: {
-      scroller: ".main",
-      trigger: ".t",
-      start: "top 60%",
-      end: "botton 30%",
-      // scrub: 2,
-    },
-  });
-}
 gsap.from(".t", {
   y: -100,
   opacity: 0,
@@ -329,6 +282,6 @@ gsap.from(".t", {
     trigger: ".t",
     start: "top 60%",
     end: "botton 30%",
-    // scrub: 2,
+    scrub: 2,
   },
 });
