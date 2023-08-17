@@ -27,8 +27,11 @@
     }
 
     .s {
-        display: none;
+        /* display: none; */
         overflow: visible;
+    }
+    .s .b{
+        display: none;
     }
 
     .s2 {
@@ -40,7 +43,7 @@
     }
 
     .hero {
-        height: 50vh;
+        height: 65vh;
     }
 
     .hero h1 {
@@ -69,7 +72,7 @@
     .hero .image img {
         display: block;
         position: relative;
-        top: 15vw;
+        top: -8vw;
         width: 85vw;
         height: 20vh;
     }

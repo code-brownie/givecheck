@@ -40,7 +40,6 @@ var timeout;
 const mousefollower = (xscale, yscale) => {
   const ms = document.querySelector(".mini-circle");
   window.addEventListener("mousemove", (dets) => {
-    
     ms.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale},${yscale})`;
   });
 };
@@ -55,7 +54,7 @@ const cursorskew = () => {
     yscale = gsap.utils.clamp(0.8, 1.2, dets.clientY);
 
     const circle = document.querySelector(".mini-circle");
-    const circleSize = 15; 
+    const circleSize = 15;
 
     const circleX = dets.clientX - circleSize / 2;
     const circleY = dets.clientY - circleSize / 2;
@@ -97,22 +96,22 @@ arrow.addEventListener("click", function () {
 // nav end here
 // img scrollTrigger
 
+if (window.innerWidth >= 768) {
+  gsap.to(".image", {
+    y: -100,
+    backgroundPositionY: "50%",
 
+    duration: 1.5,
 
-gsap.to(".image", {
-  y: -100,
-  backgroundPositionY: "50%",
-
-  duration: 1.5,
-
-  scrollTrigger: {
-    scroller: ".main",
-    trigger: ".image",
-    start: "top 55%",
-    end: "top 0%",
-    scrub: 2,
-  },
-});
+    scrollTrigger: {
+      scroller: ".main",
+      trigger: ".image",
+      start: "top 55%",
+      end: "top 0%",
+      scrub: 2,
+    },
+  });
+}
 // image ends here
 
 gsap.from(".second .title", {
