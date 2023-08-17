@@ -306,9 +306,9 @@ console.log("Current time:", timeFormat);
 document.querySelector(".footer-left .date").innerHTML = `${timeFormat}  IST`;
 if (innerWidth >= 769) {
   gsap.from(".t", {
-    y: -100,
+    y: -500,
     opacity: 0,
-    duration: 0.8,
+    duration: 1,
 
     scrollTrigger: {
       scroller: ".main",

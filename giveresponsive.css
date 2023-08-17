@@ -78,6 +78,22 @@
         height: 25vh;
     }
 
+    .tsw {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 5vh;
+        position: relative;
+        top: 45vw;
+        color: #bfbfbf;
+        font-weight: 700;
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3vw 0;
+
+    }
+
     .t {
         position: relative;
         top: -50vw;
@@ -116,13 +132,13 @@
         font-size: 13vw;
         width: fit-content;
         padding-left: 4vw;
-        top: -20vw;
+        top: -40vw;
         position: relative;
     }
 
     .challenge {
         position: relative;
-        top: -15vw;
+        top: -40vw;
         width: 100vw;
         height: 60vh;
         color: white;
@@ -154,7 +170,7 @@
         font-size: 11vw;
         width: fit-content;
         padding-left: 5vw;
-        margin-top: 4vw;
+        margin-top: -30vw;
         margin-bottom: -4vw;
     }
 
