@@ -44,7 +44,7 @@
     }
 
     .hero {
-        height: 55vh;
+        height: 60vh;
     }
 
     .hero h1 {
@@ -63,8 +63,8 @@
     .hero .image {
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         width: 90%;
         background: none;
         height: 50vh;
@@ -73,14 +73,14 @@
     .hero .image img {
         display: block;
         position: relative;
-        top: -8vw;
+        top: 25vw;
         width: 85vw;
-        height: 20vh;
+        height: 25vh;
     }
 
     .t {
         position: relative;
-        top: -20vw;
+        top: -50vw;
     }
 
     .second {
@@ -160,7 +160,7 @@
 
     .solution {
         width: 100%;
-        height: 110vh;
+        height: 90vh;
         color: white;
         display: flex;
         justify-content: space-around;
@@ -176,7 +176,7 @@
     }
 
     .sol-col-2 .sol-row-1 {
-        padding-bottom: 15vw;
+        padding-bottom: 10vw;
     }
 
     .solution-title h1 {
@@ -187,7 +187,7 @@
         width: fit-content;
         padding-left: 5vw;
         margin-top: 2rem;
-        margin-bottom: 10vw;
+        margin-bottom: 1vw;
     }
 
     .next .next-text {
