@@ -78,6 +78,11 @@
         height: 20vh;
     }
 
+    .t {
+        position: relative;
+        top: -20vw;
+    }
+
     .second {
 
         width: 100vw;
