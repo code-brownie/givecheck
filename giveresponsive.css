@@ -1,4 +1,4 @@
-@media(max-width:700px) {
+@media(max-width:768px) {
     .mini-circle {
         display: none;
     }
@@ -30,7 +30,8 @@
         /* display: none; */
         overflow: visible;
     }
-    .s .b{
+
+    .s .b {
         display: none;
     }
 
@@ -43,7 +44,7 @@
     }
 
     .hero {
-        height: 65vh;
+        height: 55vh;
     }
 
     .hero h1 {
@@ -219,9 +220,10 @@
     }
 
     .footer-right {
-        padding-bottom:2vw;
+        padding-bottom: 2vw;
         gap: 40px;
     }
+
     .logos {
         margin-top: 10vw;
         padding: 60px 0;
