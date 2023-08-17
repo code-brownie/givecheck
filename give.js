@@ -96,7 +96,7 @@ arrow.addEventListener("click", function () {
 // nav end here
 // img scrollTrigger
 
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1000) {
   gsap.to(".image", {
     y: -100,
     backgroundPositionY: "50%",
@@ -286,7 +286,7 @@ if (window.innerWidth >= 768) {
     },
   });
 }
-if (window.innerWidth <= 768) {
+if (window.innerWidth <= 1000) {
   gsap.from(".second .title", {
     opacity: 0,
     x: -500,
