@@ -294,7 +294,7 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       scroller: ".main",
       trigger: ".second .title",
-      start: "top 40%",
+      start: "top 60%",
       end: "bottom 10%",
       // markers:true
     },
@@ -307,7 +307,7 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       scroller: ".main",
       trigger: ".second .overview",
-      start: "top 38%",
+      start: "top 59%",
       end: "bottom 0%",
       // markers:true
     },
@@ -337,7 +337,7 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       trigger: ".problem h1",
       scroller: ".main",
-      start: "top 55%",
+      start: "top 65%",
       end: "bottom 10%",
       // markers: true,
     },
@@ -349,7 +349,7 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       trigger: ".challenge .col-1",
       scroller: ".main",
-      start: "top 50%",
+      start: "top 60%",
       end: "bottom 0%",
       // markers: true,
     },
@@ -361,7 +361,7 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       trigger: ".challenge .col-1",
       scroller: ".main",
-      start: "top 50%",
+      start: "top 60%",
       end: "bottom 0%",
     },
   });
