@@ -321,7 +321,7 @@ if (window.innerWidth <= 1000) {
     scrollTrigger: {
       scroller: ".main",
       trigger: ".t",
-      start: "top 60%",
+      start: "top 65%",
       end: "bottom 10%",
       // scrub: 3,
       // markers:true,
