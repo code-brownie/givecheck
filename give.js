@@ -197,7 +197,7 @@ if (window.innerWidth >= 1000) {
   });
 }
 // challange and sol ends here
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1000) {
   const tg = gsap.timeline();
   tg.from(".gal-1", {
     x: -500,
