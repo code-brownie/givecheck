@@ -421,7 +421,7 @@
 .next .next-text {
     padding-left: 2rem;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 .elem {
@@ -504,23 +504,17 @@
     position: relative;
     top: 25vw;
     color: #bfbfbf;
-    /* text-align: center; */
     font-weight: 700;
     font-size: 5vw;
-    /* margin: auto; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 3vw 0;
-    /* overflow: hidden; */
+
 }
 
 .t {
 
-
-    /* background-size:cover ; */
     font-style: oblique;
     letter-spacing: 0.15vw;
-    /* background-clip: text;
-    -webkit-background-clip: text; */
 }
