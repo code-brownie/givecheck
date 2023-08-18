@@ -68,6 +68,11 @@
         padding-top: 2vw;
     }
 
+    .bounding {
+        overflow: hidden;
+        width: fit-content;
+    }
+
 
     .hero .image {
         position: relative;
@@ -183,6 +188,10 @@
         margin-bottom: -4vw;
     }
 
+    .logos:hover .logo-slide {
+        animation-play-state: running;
+    }
+
     .solution {
         width: 100%;
         height: 100vh;
@@ -193,9 +202,11 @@
         flex-direction: column;
         padding: 3vw 5vw;
     }
-    .solution h5{
+
+    .solution h5 {
         font-size: 3vw;
     }
+
     .solution p {
         line-height: 1.5;
         width: 100%;

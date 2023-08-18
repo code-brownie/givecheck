@@ -97,6 +97,11 @@ arrow.addEventListener("click", function () {
 // img scrollTrigger
 
 if (window.innerWidth >= 1200) {
+  gsap.from(".bounding_elem", {
+    y: 1000,
+    duration: 2,
+    ease: Expo.easeInOut,
+  });
   gsap.to(".image", {
     y: -100,
     backgroundPositionY: "50%",
@@ -287,6 +292,11 @@ if (window.innerWidth >= 1200) {
   });
 }
 if (window.innerWidth <= 1000) {
+  gsap.from(".bounding_elem", {
+    y: 1000,
+    duration: 1.2,
+    ease: Expo.easeInOut,
+  });
   gsap.from(".second .title", {
     opacity: 0,
     y: 100,
@@ -296,7 +306,6 @@ if (window.innerWidth <= 1000) {
       trigger: ".second .title",
       start: "top 60%",
       end: "bottom 10%",
-      // markers:true
     },
   });
 
@@ -309,7 +318,6 @@ if (window.innerWidth <= 1000) {
       trigger: ".second .overview",
       start: "top 59%",
       end: "bottom 0%",
-      // markers:true
     },
   });
   gsap.from(".t", {
@@ -323,8 +331,6 @@ if (window.innerWidth <= 1000) {
       trigger: ".t",
       start: "top 65%",
       end: "bottom 10%",
-      // scrub: 3,
-      // markers:true,
     },
   });
 
@@ -339,7 +345,6 @@ if (window.innerWidth <= 1000) {
       scroller: ".main",
       start: "top 65%",
       end: "bottom 10%",
-      // markers: true,
     },
   });
   gsap.from(".challenge .col-1", {
@@ -351,7 +356,6 @@ if (window.innerWidth <= 1000) {
       scroller: ".main",
       start: "top 60%",
       end: "bottom 0%",
-      // markers: true,
     },
   });
   gsap.from(".challenge .col-2", {
